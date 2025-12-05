@@ -17,7 +17,24 @@ Project Design Requirements:
 - Attain at least 1.0 mV/V output at the rated torque of 600 in-lbf.
 - Safety factor of Xo = 4 for yield or brittle failure
 - Safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches
-- Fatigue stress safety factor of XS = 1.5.
+- Fatigue stress safety factor of XS = 1.5
+
+Chosen Material: Al 7075 - T6
+Young's modulus = 11e6 psi
+Poisson's ratio = 0.33
+
+
+![Photo of cad drawing]({{ "/assets/images/drawing.png" | relative_url }}){: .inline-image-l}
+CAD Dimensions of Torque Wrench
+
+Describe material used and its relevant mechanical properties.
+Diagram communicating how loads and boundary conditions were applied to your FEM model.
+Normal strain contours (in the strain gauge direction) from FEM
+Contour plot of maximum principal stress from FEM
+Summarize results from FEM calculation showing maximum normal stress (anywhere), load point deflection, strains at the strain gauge locations
+Torque wrench sensitivity in mV/V using strains from the FEM analysis
+Strain gauge selected (give type and dimensions). Note that design must physically have enough space to bond the gauges.
+
 
 
 
