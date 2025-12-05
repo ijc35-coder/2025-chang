@@ -1,25 +1,22 @@
 ---
 layout: project
-title: Analysis of Functions
-description: Class project with Graphs
-technologies: [MATLAB, python]
-image: /assets/images/function-graph.png
+title: Torque Wrench Analysis Using ANSYS 
+description: Mechanics of Materials Final Torque Wrench Project
+technologies: [MATLAB, Inventor, ANSYS]
+image: /assets/images/normalstress.png
 ---
 
+Designed a non-ratcheting, 3/8 inch drive instrumented torque wrench rated for 600 in-lbf. Torque was transduced using strain gauges bonded to the outer surfaces of the wrench at high strain locations. 
 
-As part of a class project...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec accumsan leo. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Pellentesque ornare orci enim, vitae vestibulum nibh rutrum in. Donec pharetra risus nec ipsum fringilla, et mattis tortor auctor. Duis tortor ante, posuere ut odio a, scelerisque interdum purus. Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
+Learned how to use ANSYS via an FEM analysis of a provided ”baseline” design, used hand calculations to iterate the dimensions and material to meet all requirements, built a CAD model of the design, and then imported the CAD model to ANSYS. Once in ANSYS I performed the stress analysis, to ensure the design met the requirements and determined the torque wrench sensitivity.
+
+Design requirements: 
+    •	Attain at least 1.0 mV/V output at the rated torque of 600 in-lbf.
+	•	Safety factor of Xo = 4 for yield or brittle failure
+	•	Safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches
+	•	Fatigue stress safety factor of XS = 1.5.
 
 
-Aenean faucibus luctus est, sed bibendum tellus. Nulla et magna urna. Morbi a ipsum sollicitudin, rhoncus risus volutpat, ultricies nunc. Quisque mollis finibus ante id imperdiet. Quisque vehicula elit sit amet felis facilisis fermentum.
 
-
-This is how I solved the problem:
-
-```python
-    some code = 10;
-    plot();
-```
-
-Aenean tincidunt aliquam arcu, in euismod dui dapibus eu. In placerat, mi et ultrices consequat, quam ligula cursus mauris, in semper neque nibh at est. Maecenas hendrerit dignissim porta. Phasellus nec fringilla dolor. Etiam efficitur nisi sit amet velit pharetra feugiat. Etiam ultrices turpis at leo semper, eleifend scelerisque neque malesuada. Aliquam molestie congue rhoncus. Donec blandit neque dolor, nec tristique mi pretium ac. Mauris tincidunt ullamcorper magna, nec pellentesque mi sagittis quis.
 
 
