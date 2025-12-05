@@ -15,9 +15,9 @@ ________________________________________________________________________________
 Project Design Requirements: 
 
 - Attain at least 1.0 mV/V output at the rated torque of 600 in-lbf.
-Safety factor of Xo = 4 for yield or brittle failure
-Safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches
-Fatigue stress safety factor of XS = 1.5.
+- Safety factor of Xo = 4 for yield or brittle failure
+- Safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches
+- Fatigue stress safety factor of XS = 1.5.
 
 
 
