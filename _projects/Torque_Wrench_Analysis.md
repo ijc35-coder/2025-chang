@@ -63,11 +63,11 @@ Poisson's ratio = 0.33
 </figure>
 
 <!-- Strain Gauge Results -->
-<div class="image-row">
-  <img src="{{ '/assets/images/tensionstraing.png' | relative_url }}" alt="Tensile strain at strain gauge location">
-  <img src="{{ '/assets/images/compressionstraing.png' | relative_url }}" alt="Compressive strain at strain gauge location">
-</div>
-<p class="caption">Strains at Strain Gauge Locations</p>
+![Photo of comp sg]({{ "/assets/images/compressionstraing.png" | relative_url }}){: .inline-image-l}
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/tensionstraing.png' | relative_url }}" alt="tensile strain gauge">
+  <figcaption>Strains at Strain Gauge Locations</figcaption>
+</figure>
 
 <!-- Text Results -->
 <p>
