@@ -26,30 +26,90 @@ Poisson's ratio = 0.33
 
 ![Photo of cad drawing]({{ "/assets/images/drawing.png" | relative_url }}){: .inline-image-l}
 
+
+
+
+
 CAD Dimensions of Torque Wrench
+
+
+
+
 
 ![Photo of loads and boundary conditions]({{ "/assets/images/boundaryconditions.png" | relative_url }}){: .inline-image-l}
 
+
+
+
 Loads and Boundary Conditions Applied 
+
+
+
+
+
 
 ![Photo of normal strain contours]({{ "/assets/images/normalstress.png" | relative_url }}){: .inline-image-l}
 
+
+
+
+
 Normal strain Contours (in the strain gauge direction) from FEM
+
+
+
+
+
 
 ![Photo of max princ stress]({{ "/assets/images/maxprinc.png" | relative_url }}){: .inline-image-l}
 
+
+
+
+
+
 Contour plot of maximum principal stress from FEM
+
+
+
+
+
 
 ![Photo of max normal stress]({{ "/assets/images/maxnormalstress.png" | relative_url }}){: .inline-image-l}
 
+
+
+
+
+
 Maximum Normal Stress
+
+
+
+
+
 
 ![Photo of deflection]({{ "/assets/images/deflectiontw.png" | relative_url }}){: .inline-image-l}
 
+
+
+
+
+
 Load Point Deflection
+
+
+
+
+
 
 ![Photo of strains]({{ "/assets/images/tensionstraing.png" | relative_url }}){: .inline-image-l}
 ![Photo of comp strains]({{ "/assets/images/compressionstraing.png" | relative_url }}){: .inline-image-l}
+
+
+
+
+
 
 Strains at Strain Gauge Locations
 Calculated Torque Wrench Sensitivity: 1.107 mV/V
