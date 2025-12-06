@@ -24,96 +24,62 @@ Young's modulus = 11e6 psi
 Poisson's ratio = 0.33
 
 
-![Photo of cad drawing]({{ "/assets/images/drawing.png" | relative_url }}){: .inline-image-l}
+<!-- CAD Dimensions -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/drawing.png' | relative_url }}" alt="CAD drawing of torque wrench">
+  <figcaption>CAD Dimensions of Torque Wrench</figcaption>
+</figure>
+
+<!-- Loads and Boundary Conditions -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/boundaryconditions.png' | relative_url }}" alt="Loads and boundary conditions applied to torque wrench">
+  <figcaption>Loads and Boundary Conditions Applied</figcaption>
+</figure>
+
+<!-- Normal Strain Contours -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/normalstress.png' | relative_url }}" alt="Normal strain contours in strain gauge direction">
+  <figcaption>
+    Normal Strain Contours (in the Strain Gauge Direction) from FEM
+  </figcaption>
+</figure>
+
+<!-- Maximum Principal Stress -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/maxprinc.png' | relative_url }}" alt="Maximum principal stress contour plot">
+  <figcaption>Contour Plot of Maximum Principal Stress from FEM</figcaption>
+</figure>
+
+<!-- Maximum Normal Stress -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/maxnormalstress.png' | relative_url }}" alt="Maximum normal stress contour plot">
+  <figcaption>Maximum Normal Stress</figcaption>
+</figure>
+
+<!-- Load Point Deflection -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/deflectiontw.png' | relative_url }}" alt="Load point deflection of torque wrench">
+  <figcaption>Load Point Deflection</figcaption>
+</figure>
+
+<!-- Strain Gauge Results -->
+<div class="image-row">
+  <img src="{{ '/assets/images/tensionstraing.png' | relative_url }}" alt="Tensile strain at strain gauge location">
+  <img src="{{ '/assets/images/compressionstraing.png' | relative_url }}" alt="Compressive strain at strain gauge location">
+</div>
+<p class="caption">Strains at Strain Gauge Locations</p>
+
+<!-- Text Results -->
+<p>
+  <strong>Calculated Torque Wrench Sensitivity:</strong> 1.107 mV/V
+</p>
+
+<p>
+  <strong>Strain Gauge Selection:</strong><br>
+  OMEGA Precision Linear Strain Gauge (7.6 × 5.8 mm)<br>
+  Product Number: SGD-2/350-LY11
+</p>
 
-
-
-
-
-CAD Dimensions of Torque Wrench
-
-
-
-
-
-![Photo of loads and boundary conditions]({{ "/assets/images/boundaryconditions.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-Loads and Boundary Conditions Applied 
-
-
-
-
-
-
-![Photo of normal strain contours]({{ "/assets/images/normalstress.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-
-Normal strain Contours (in the strain gauge direction) from FEM
-
-
-
-
-
-
-![Photo of max princ stress]({{ "/assets/images/maxprinc.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-
-
-Contour plot of maximum principal stress from FEM
-
-
-
-
-
-
-![Photo of max normal stress]({{ "/assets/images/maxnormalstress.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-
-
-Maximum Normal Stress
-
-
-
-
-
-
-![Photo of deflection]({{ "/assets/images/deflectiontw.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-
-
-Load Point Deflection
-
-
-
-
-
-
-![Photo of strains]({{ "/assets/images/tensionstraing.png" | relative_url }}){: .inline-image-l}
-![Photo of comp strains]({{ "/assets/images/compressionstraing.png" | relative_url }}){: .inline-image-l}
-
-
-
-
-
-
-Strains at Strain Gauge Locations
-Calculated Torque Wrench Sensitivity: 1.107 mV/V
-Strain Gauge Selection: OMEGA Precision Linear Strain Gauge, 7.6 x 5.8mm, Product Number SGD-2/350-LY11
 
 
 
