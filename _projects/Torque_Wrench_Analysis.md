@@ -20,8 +20,8 @@ Project Design Requirements:
 - Fatigue stress safety factor of XS = 1.5
 
 Chosen Material: Al 7075 - T6
-Young's modulus = 11e6 psi
-Poisson's ratio = 0.33
+- Young's modulus = 11e6 psi
+- Poisson's ratio = 0.33
 
 
 <!-- CAD Dimensions -->
