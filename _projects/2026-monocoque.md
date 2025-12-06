@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Cornell FSAE Racing 2026 Monocoque
+title: Monocoque FSAE
 description: Design, Manufacturing Process, and Integration of Monocoque
 technologies: [Autodesk Inventor, Vault, MATLAB, ANSYS, Composite Manufacturing]
 image: /assets/images/spaceship-design.jpg

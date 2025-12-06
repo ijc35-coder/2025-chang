@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Cornell FSAE Racing 2025 Protective Structures
+title: Protective Structures FSAE
 description: CAD, Manufacturing
 technologies: [Autodesk Inventor, Vault]
 image: /assets/images/protectivestructures.png
