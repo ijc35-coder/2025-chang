@@ -29,6 +29,7 @@ After creating the Block Diagram, we found the transfer function.
 $$
 G(s) = \frac{X(s)}{F(s)} = \frac{1}{m s^2 + b s + k}
 $$
+
 $$
 G_m(s) = \frac{F(s)}{U(s)} = \frac{k_m}{\tau s + 1}
 $$
