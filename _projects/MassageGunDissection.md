@@ -36,8 +36,6 @@ $$
 
 The overall system is:
 $$
-X(s) = G(s)G_m(s)U(s)
+X(s) = G(s)G_m(s)U(s) = \frac{k_m}{(\tau s + 1)(m s^2 + b s + k)}\, U(s)
 $$
-$$
-X(s) = \frac{k_m}{(\tau s + 1)(m s^2 + b s + k)}\, U(s)
-$$
+
