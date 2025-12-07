@@ -40,7 +40,7 @@ X(s) = G(s)G_m(s)U(s) = \frac{k_m}{(\tau s + 1)(m s^2 + b s + k)}\, U(s)
 $$
 ## Parameter Estimation
 
-Next, we focused on identifying the unknown system parameters. The massage gun packaging provided several key motor specifications:
+Next, we focused on identifying the unknown system parameters. The massage gun packaging provided several important motor specifications:
 
 - **Rated voltage:** $V = 7.4\ \text{V}$
 - **Motor power:** $P = 25\ \text{W}$
@@ -61,12 +61,12 @@ $$
 \tau = \frac{P}{\omega} = \frac{25}{188.5} = 0.133\ \text{N·m}
 $$
 
-Using a pair of calipers, the top section of the massage gun was removed and the peak-to-peak displacement of the output ball was measured to be $5\ \text{mm}$. This corresponds to an eccentric radius of:
+The top section of the massage gun was removed and using calipers the peak-to-peak displacement of the output ball was measured to be $5\ \text{mm}$. This corresponds to a radius of:
 $$
 r = \frac{5}{2} = 2.5\ \text{mm} = 0.0025\ \text{m}
 $$
 
-Assuming a mechanical efficiency of $\eta = 0.9$, the force generated at the output is estimated as:
+Assuming an efficiency of $\eta = 0.9$, the force generated at the output is estimated as:
 $$
 F = \frac{\eta \tau}{r} = \frac{0.9 \times 0.133}{0.0025} = 47.88\ \text{N}
 $$
@@ -76,5 +76,5 @@ $$
 k_m = \frac{F}{V} = \frac{47.88}{7.4} = 6.47\ \text{N/V}
 $$
 
-These values represent rough approximations of the physical system. The true mechanical efficiency is unknown, and it is unclear whether the rated specifications on the packaging apply uniformly across all massage gun settings. The remaining unknown parameters in the system model are the moving mass $m$, damping coefficient $b$, and stiffness $k$, which will be identified using MATLAB-based system identification techniques.
+These values are only rough approximations of the system. We are unable to calculate the real efficiency value, and are unsure if the parameters on the box can be applied to all massage gun settings. The only variables unknown are m, b, and k, which we will find using a MATLAB script.
 
