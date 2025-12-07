@@ -33,6 +33,7 @@ $$
 $$
 G_m(s) = \frac{F(s)}{U(s)} = \frac{k_m}{\tau s + 1}
 $$
+
 The overall system is:
 $$
 X(s) = G(s)G_m(s)U(s)
