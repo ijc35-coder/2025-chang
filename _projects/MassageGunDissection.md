@@ -51,11 +51,6 @@ $$
 P = \tau \omega
 $$
 
-Converting the rotational speed to radians per second,
-$$
-\omega = 1800 \left(\frac{2\pi}{60}\right) = 188.5\ \text{rad/s}
-$$
-
 The motor torque is therefore:
 $$
 \tau = \frac{P}{\omega} = \frac{25}{188.5} = 0.133\ \text{N·m}
