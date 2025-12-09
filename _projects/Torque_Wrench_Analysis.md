@@ -23,6 +23,11 @@ Chosen Material: Al 7075 - T6
 - Young's modulus = 11e6 psi
 - Poisson's ratio = 0.33
 
+Design improvements
+- Lighter: 
+	- Made of Aluminum rather than steel
+	- Shorter by 2.5 inches
+
 
 <!-- CAD Dimensions -->
 <figure class="inline-image-l">
