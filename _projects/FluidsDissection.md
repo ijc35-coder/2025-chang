@@ -6,12 +6,12 @@ technologies: [Hand Tools, Fluid Mechanical Analysis]
 image: /assets/images/hedgetrimmer.png
 ---
 
-
+<h3>Hedge Trimmer Dissection Video</h3>
 <div class="video-container">
   <iframe 
-    src="https://www.youtube.com/watch?v=CO9ZUhQ-YNg"
+    src="https://www.youtube.com/embed/CO9ZUhQ-YNg"
     frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
