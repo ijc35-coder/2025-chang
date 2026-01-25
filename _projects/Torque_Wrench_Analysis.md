@@ -68,7 +68,6 @@ Design improvements
 </figure>
 
 <!-- Strain Gauge Results -->
-![Photo of comp sg]({{ "/assets/images/compressionstraing.png" | relative_url }}){: .inline-image-l}
 <figure class="inline-image-l">
   <img src="{{ '/assets/images/tensionstraing.png' | relative_url }}" alt="tensile strain gauge">
   <figcaption>Strains at Strain Gauge Locations</figcaption>

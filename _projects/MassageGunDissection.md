@@ -71,5 +71,5 @@ $$
 k_m = \frac{F}{V} = \frac{47.88}{7.4} = 6.47\ \text{N/V}
 $$
 
-These values are only rough approximations of the system. We are unable to calculate the real efficiency value, and are unsure if the parameters on the box can be applied to all massage gun settings. The only variables unknown are m, b, and k, which we will find using a MATLAB script.
+These values are only rough approximations of the system. We are unable to calculate the real efficiency value, and are unsure if the parameters on the box can be applied to all massage gun settings. The only variables unknown are m, b, and k, which we found using a MATLAB script.
 
