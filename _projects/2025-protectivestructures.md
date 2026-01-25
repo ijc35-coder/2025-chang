@@ -3,7 +3,7 @@ layout: project
 title: Monocoque FSAE
 description: Design, Manufacturing Process, and Integration of Monocoque
 technologies: [Autodesk Inventor, Vault, MATLAB, ANSYS, Composite Manufacturing]
-image: /assets/images/spaceship-design.jpg
+image: /assets/images/clearcoat.jpeg
 ---
 
 
@@ -27,7 +27,7 @@ Designed the new year's monocoque geometry, incorporating packaging constraints 
 
 <!-- Overall Timeline -->
 <figure class="inline-image-l">
-  <img src="{{ '/assets/images/timeline.png' | relative_url }}" alt="Timeline">
+  <img src="{{ '/assets/images/timeline.jpeg' | relative_url }}" alt="Timeline">
   <figcaption>Preliminary Gantt Chart to Map Out Design and Manufacturing Process</figcaption>
 </figure>
 
