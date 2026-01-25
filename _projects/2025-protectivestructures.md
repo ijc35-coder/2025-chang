@@ -73,6 +73,12 @@ Manufactured the top and bottom monocoque molds through two wet layup processes.
   <figcaption>Creating the Top Plug by Wet Layup Using Vinyl Ester Resin, Carbon Fiber, and Fiberglass</figcaption>
 </figure>
 
+<!--Completed Top and Bottom Mold-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/mold.jpeg' | relative_url }}" alt="Molds">
+  <figcaption>Top and Bottom Molds Set Up Together</figcaption>
+</figure>
+
 ### 6. Monocoque Manufacturing
 Over a two-week intensive manufacturing period, completed carbon-fiber and aluminum honeycomb layups and vacuum bagging operations using the completed molds, resulting in a torsionally stiff, reliable monocoque ready for vehicle integration and testing.
 
