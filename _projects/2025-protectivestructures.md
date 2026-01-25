@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Monocoque FSAE
+title: Monocoque Design and Manufacturing
 description: Design, Manufacturing Process, and Integration of Monocoque
 technologies: [Autodesk Inventor, Vault, MATLAB, ANSYS, Composite Manufacturing]
 image: /assets/images/clearcoat.jpeg
