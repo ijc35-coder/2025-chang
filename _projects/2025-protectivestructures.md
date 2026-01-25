@@ -109,7 +109,3 @@ Over a two-week intensive manufacturing period, completed carbon-fiber and alumi
 
 
 
-
-This PDF goes into detail of the work I have done over the past year to ensure every other part on the car, most notably the suspension, accumulator, low voltage harness, cooling system, and inverters, can be fully integrated with the frame of the car. 
-
-
