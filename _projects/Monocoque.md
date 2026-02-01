@@ -55,7 +55,7 @@ Developed laminate ply schedules for carbon-fiber skins and aluminum honeycomb c
 <!-- Three Point Bend Tests -->
 <figure class="inline-image-l">
   <img src="{{ '/assets/images/threepoint.jpg' | relative_url }}" alt="ThreePointBend">
-  <figcaption>Three Point Bend Tests with Test Panels</figcaption>
+  <figcaption>Three Point Bend Tests with Equivalent Steel Tubes</figcaption>
 </figure>
 
 <!-- Perimeter Shear Tests -->
