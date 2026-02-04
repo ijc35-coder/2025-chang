@@ -20,7 +20,7 @@ Aspiring engineering student with a strong foundation in hands-on manufacturing,
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 4.0/4.0 | Graduation: May, 2027
+  Graduation: May, 2027
 
 - **River Hill High School**  
   *High School Diploma*  
