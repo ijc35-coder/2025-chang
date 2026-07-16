@@ -80,7 +80,18 @@ Manufactured the top and bottom monocoque molds through two wet layup processes.
 </figure>
 
 ### 6. Monocoque Manufacturing
-Over a two-week intensive manufacturing period, completed carbon-fiber and aluminum honeycomb layups and vacuum bagging operations using the completed molds, resulting in a torsionally stiff, reliable monocoque ready for vehicle integration and testing.
+Over a ten-day intensive manufacturing period, completed carbon-fiber and aluminum honeycomb layups and vacuum bagging operations using the completed molds, resulting in a torsionally stiff, reliable monocoque ready for vehicle integration and testing.
+
+The accelerated schedule allowed accelerated vehicle integration. Completing the monocoque early supported a February 2 drive-date target and provided approximately five months for integration, reliability testing, tuning, and driver development before competition.
+
+Manufacturing included:
+
+- Manufacturing and post-processing composite top and bottom mold
+- Cutting and organizing all prepreg plies
+- Laying up 16 layers of prepreg (largest ply schedule was 8-core-8)
+- Fitting and splicing aluminum honeycomb core
+- Vacuum bagging and curing
+- Post-processing the cured monocoque
 
 <!-- Laying Up Inside the Monocoque -->
 <figure class="inline-image-l">
@@ -104,6 +115,12 @@ Over a two-week intensive manufacturing period, completed carbon-fiber and alumi
 <figure class="inline-image-l">
   <img src="{{ '/assets/images/clearcoat.jpeg' | relative_url }}" alt="Clearcoat">
   <figcaption>Clear Coated Monocoque After Release</figcaption>
+</figure>
+
+<!-- Manufacturing Timeline -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/layuptimeline.png' | relative_url }}" alt="timeline">
+  <figcaption>Full monocoque manufacturing schedule during January Manufacturing Period</figcaption>
 </figure>
 
 
