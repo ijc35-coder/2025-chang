@@ -123,6 +123,217 @@ Manufacturing included:
   <figcaption>Full monocoque manufacturing schedule during January Manufacturing Period</figcaption>
 </figure>
 
+### 7. Monocoque Torsional-Stiffness
+
+Rather than choosing an arbitrary torsional stiffness goal, the vehicle was modeled as a set of rotational springs in series. The model included the effective wheel stiffness, suspension-structure stiffness, and monocoque stiffness:
+
+## Torsional Stiffness Target Development
+
+The integrated monocoque was mounted to the welding table, where the rear corners were rigidly bolted to the table to apply an "infinitely stiff" boundary condition. A known moment was applied to create a one-droop case using specific weight intervals, and angular deflection was measured with dial indicators.
+
+<!-- Twist test Picture -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/fulltwisttest.png' | relative_url }}" alt="Torsional stiffness test">
+  <figcaption>Overall Twist Test Set-up</figcaption>
+</figure>
+
+<!-- Twist test Picture zoomed-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/twisttestzoom.png' | relative_url }}" alt="Torsional stiffness test rear corners">
+  <figcaption>Rear Corner Twist Test Set-up</figcaption>
+</figure>
+
+<!-- Torsional Stiffness calc -->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/monocoquetorsion.png' | relative_url }}" alt="Torsional stiffness target calculation">
+  <figcaption>Monocoque Torsional Stiffness Calculated from Twist Test</figcaption>
+</figure>
+
+<!-- Torsional Stiffness hubhub calc-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/hubhub.png' | relative_url }}" alt="Torsional stiffness target calculation">
+  <figcaption>Hub-to-Hub Torsional Stiffness Calculated from Twist Test</figcaption>
+</figure>
+
+From the measured load-deflection curves:
+
+| Component | Measured Torsional Stiffness |
+|-----------|----------------------------:|
+| Monocoque | **3364 Nm/deg** |
+| Hub-to-Hub Vehicle | **1907 Nm/deg** |
+
+The hub-to-hub stiffness includes compliance from both the suspension and the monocoque.
+
+---
+
+## Calculating Suspension Stiffness
+
+The suspension and chassis act as torsional springs in series, so
+
+```
+1 / K_hub = 1 / K_monocoque + 1 / K_suspension
+```
+
+Substituting the measured values,
+
+```
+1 / 1907
+=
+1 / 3364
++
+1 / K_suspension
+```
+
+which gives
+
+```
+K_suspension = 4403 Nm/deg
+```
+
+---
+
+## Normalization
+
+Vehicle torsional stiffness depends on suspension wheel rate. The measured stiffness values were normalized by the suspension wheel rate.
+
+
+```
+Normalization factor = 171.92 Nm/deg
+```
+
+Normalized stiffness values become
+
+| Component | Normalized Stiffness |
+|-----------|---------------------:|
+| Monocoque | **19.57** |
+| Suspension | **25.61** |
+
+---
+
+## Vehicle Compliance Target
+
+The target was defined so that approximately:
+
+- **90% of total vehicle compliance came from the suspension**
+- **10% of total vehicle compliance came from the monocoque and suspension-supporting structures**
+
+This ensured that chassis deformation would have a relatively small influence on suspension tuning. This also balanced the high weight associated with pursuing unnecessaryly high monocoque stiffness.
+
+Using the normalized stiffness values, overall vehicle stiffness is
+
+```
+1 / K_vehicle
+=
+1
++
+1 / K_suspension'
++
+1 / K_monocoque'
+```
+
+where the leading **1** represents tire compliance and the primed values are the normalized stiffness values.
+
+The design target was
+
+```
+K_vehicle = 0.90
+```
+
+representing a vehicle whose torsional compliance is 90% controlled by the suspension.
+
+Substituting the normalized suspension stiffness,
+
+```
+0.10
+=
+1 /
+(
+1
++
+1 / 25.61
++
+1 / K_monocoque,target'
+)
+```
+
+Solving gives
+
+```
+Normalized monocoque target
+
+K_monocoque,target' = 13.86
+```
+
+Converting back to physical units,
+
+```
+K_monocoque,target
+=
+13.86 × 171.92
+=
+2383 Nm/deg
+```
+
+Therefore, the minimum design goal for the monocoque was
+
+> **Target Monocoque Torsional Stiffness = 2383 Nm/deg**
+
+---
+
+## Comparison to Measured Performance
+
+The finished monocoque achieved
+
+```
+Measured monocoque stiffness = 3364 Nm/deg
+```
+
+which exceeds the original design target by approximately **41%**.
+
+Using the measured normalized stiffness,
+
+```
+K_vehicle
+=
+1 /
+(
+1
++
+1 / 25.61
++
+1 / 19.57
+)
+=
+0.917
+```
+
+This corresponds to
+
+> **91.7% of total vehicle torsional compliance coming from the suspension**, exceeding the original 90% design objective while providing a sufficiently rigid platform for predictable suspension tuning.
+
+
+<!-- Comparison of Target and Tested-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/targetstiffness.png' | relative_url }}" alt="Torsional stiffness target calculation">
+  <figcaption>Figure Comparing the Targeted and Tested Torsional Stiffness Value</figcaption>
+</figure>
+
+
+## Final Results
+
+The ARG26 monocoque met many primary engineering goals:
+
+- Reduced monocoque laminate mass relative to ARG25
+<!-- Weight delta-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/weightdelta.png' | relative_url }}" alt="Torsional stiffness target calculation">
+  <figcaption>Comparing 2025 Car Weights to 2026 Car Weights</figcaption>
+</figure>
+
+- Achieved a measured torsional stiffness of 3,364 N·m/deg, exceeding torsional stiffness goal
+- Completed manufacturing in approximately 10 days, which set a new team record for fastest monocoque manufacturing
+- Supported an early drive date and an extended vehicle testing campaign
+
 
 
 
