@@ -129,6 +129,7 @@ Rather than choosing an arbitrary torsional stiffness goal, the vehicle was mode
 
 ## Torsional Stiffness Target Development
 
+
 The integrated monocoque was mounted to the welding table, where the rear corners were rigidly bolted to the table to apply an "infinitely stiff" boundary condition. A known moment was applied to create a one-droop case using specific weight intervals, and angular deflection was measured with dial indicators.
 
 <!-- Twist test Picture -->
@@ -161,6 +162,7 @@ From the measured load-deflection curves:
 |-----------|----------------------------:|
 | Monocoque | **3364 Nm/deg** |
 | Hub-to-Hub Vehicle | **1907 Nm/deg** |
+
 
 The hub-to-hub stiffness includes compliance from both the suspension and the monocoque.
 
