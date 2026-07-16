@@ -276,7 +276,7 @@ The ARG26 monocoque met many primary engineering goals:
 - Reduced monocoque laminate mass relative to ARG25
 <!-- Weight delta-->
 <figure class="inline-image-l">
-  <img src="{{ '/assets/weightdelta.png' | relative_url }}" alt="Torsional stiffness target calculation">
+  <img src="{{ '/assets/weightdelta.png' | relative_url }}" alt="weightdelta">
   <figcaption>Comparing 2025 Car Weights to 2026 Car Weights</figcaption>
 </figure>
 
