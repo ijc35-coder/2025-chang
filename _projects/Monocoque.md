@@ -156,208 +156,141 @@ The integrated monocoque was mounted to the welding table, where the rear corner
   <figcaption>Hub-to-Hub Torsional Stiffness Calculated from Twist Test</figcaption>
 </figure>
 
-From the measured load-deflection curves:
+From the slopes of the measured data, the torsional stiffnesses of the monocoque and complete hub-to-hub assembly were:
 
 | Component | Measured Torsional Stiffness |
-|-----------|----------------------------:|
-| Monocoque | **3364 Nm/deg** |
-| Hub-to-Hub Vehicle | **1907 Nm/deg** |
+|-----------|-----------------------------:|
+| Monocoque | **3364 N·m/deg** |
+| Hub-to-hub assembly | **1907 N·m/deg** |
 
-
-The hub-to-hub stiffness includes compliance from both the suspension and the monocoque.
+The hub-to-hub result includes compliance from both the monocoque and the suspension structures.
 
 ---
 
 ## Calculating Suspension Stiffness
 
-The suspension and chassis act as torsional springs in series, so
+The monocoque and suspension act as torsional springs in series. Therefore, the measured hub-to-hub stiffness is related to the individual component stiffnesses by:
 
-```
+```text
 1 / K_hub = 1 / K_monocoque + 1 / K_suspension
 ```
 
-Substituting the measured values,
+Using the measured values:
 
-```
-1 / 1907
-=
-1 / 3364
-+
-1 / K_suspension
+```text
+1 / 1907 = 1 / 3364 + 1 / K_suspension
 ```
 
-which gives
+Solving for the effective suspension stiffness gives:
 
-```
-K_suspension = 4403 Nm/deg
+```text
+K_suspension = 4403 N·m/deg
 ```
 
 ---
 
-## Normalization
+## Wheel-Rate Normalization
 
-Vehicle torsional stiffness depends on suspension wheel rate. The measured stiffness values were normalized by the suspension wheel rate.
+The torsional-stiffness requirement depends on the vehicle's suspension wheel rate. To compare the monocoque and suspension stiffnesses on a common basis, each value was normalized using the wheel-rate normalization factor.
 
-
+```text
+Normalization factor = 171.92 N·m/deg
 ```
-Normalization factor = 171.92 Nm/deg
+
+This produces the following dimensionless normalized stiffnesses:
+
+```text
+K'_monocoque = 3364 / 171.92 = 19.57
+
+K'_suspension = 4403 / 171.92 = 25.61
 ```
-
-Normalized stiffness values become
-
-| Component | Normalized Stiffness |
-|-----------|---------------------:|
-| Monocoque | **19.57** |
-| Suspension | **25.61** |
 
 ---
 
-## Vehicle Compliance Target
+## Monocoque Torsional-Stiffness Target
 
-The target was defined so that approximately:
+The target was selected so that:
 
 - **90% of total vehicle compliance came from the suspension**
 - **10% of total vehicle compliance came from the monocoque and suspension-supporting structures**
 
-This ensured that chassis deformation would have a relatively small influence on suspension tuning. This also balanced the high weight associated with pursuing unnecessaryly high monocoque stiffness.
+This approach ensured that chassis deformation would have a relatively small effect on suspension behavior without adding unnecessary monocoque weight to achieve excessive stiffness.
 
-Using the normalized stiffness values, overall vehicle stiffness is
+The normalized vehicle-stiffness model included the wheel-rate normalization term, suspension compliance, and monocoque compliance:
 
+```text
+1 / K_vehicle
+=
+1
++
+1 / K'_suspension
++
+1 / K'_monocoque
+```
 
+For the target condition, the monocoque and suspension-supporting structures were limited to 10% of the total compliance:
 
-<div class="engineering-calc">
+```text
+0.10
+=
+1
+/
+(
+1
++
+1 / 25.61
++
+1 / K'_monocoque,target
+)
+```
 
-  <div class="engineering-calc-title">Measured Torsional Stiffness</div>
+Solving for the required normalized monocoque stiffness gives:
 
-  <table class="measured-values">
-    <tr>
-      <td>Hub-to-hub stiffness, K<sub>hub</sub></td>
-      <td>1907 N·m/deg</td>
-    </tr>
-    <tr>
-      <td>Monocoque stiffness, K<sub>monocoque</sub></td>
-      <td>3364 N·m/deg</td>
-    </tr>
-  </table>
+```text
+K'_monocoque,target = 13.86
+```
 
-  <div class="equation-label">Series stiffness relationship</div>
+Converting the normalized target back into physical units:
 
-  <div class="equation">
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">K<sub>hub</sub></span>
-    </span>
+```text
+K_monocoque,target
+=
+13.86 × 171.92
+=
+2383 N·m/deg
+```
 
-    =
-
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">K<sub>monocoque</sub></span>
-    </span>
-
-    +
-
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">K<sub>suspension</sub></span>
-    </span>
-  </div>
-
-  <div class="equation-label">Substituting measured values</div>
-
-  <div class="equation">
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">1907</span>
-    </span>
-
-    =
-
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">3364</span>
-    </span>
-
-    +
-
-    <span class="fraction">
-      <span class="numerator">1</span>
-      <span class="denominator">K<sub>suspension</sub></span>
-    </span>
-  </div>
-
-  <div class="calculation-result">
-    K<sub>suspension</sub> =
-    <strong>4403 N·m/deg</strong>
-  </div>
-
-</div>
-
-## Normalizing the Stiffness Values
-
-Vehicle torsional-stiffness requirements depend on suspension wheel rate. To compare the monocoque and suspension stiffnesses on a common basis, both values were divided by a normalization factor derived from the vehicle wheel rate.
-
-<div class="engineering-calc">
-
-  <div class="engineering-calc-title">Wheel-Rate Normalization</div>
-
-  <table class="measured-values">
-    <tr>
-      <td>Normalization factor</td>
-      <td>171.92 N·m/deg</td>
-    </tr>
-  </table>
-
-  <div class="normalized-values">
-
-    <div class="normalized-value">
-      <h4>Monocoque</h4>
-
-      <p>
-        3364 N·m/deg ÷ 171.92 N·m/deg
-      </p>
-
-      <p class="value">
-        K′<sub>monocoque</sub> = 19.57
-      </p>
-    </div>
-
-    <div class="normalized-value">
-      <h4>Suspension</h4>
-
-      <p>
-        4403 N·m/deg ÷ 171.92 N·m/deg
-      </p>
-
-      <p class="value">
-        K′<sub>suspension</sub> = 25.61
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-> **Target Monocoque Torsional Stiffness = 2383 Nm/deg**
+> **Target Monocoque Torsional Stiffness: 2383 N·m/deg**
 
 ---
 
 ## Comparison to Measured Performance
 
-The finished monocoque achieved
+The completed monocoque achieved a measured torsional stiffness of:
 
+```text
+K_monocoque,measured = 3364 N·m/deg
 ```
-Measured monocoque stiffness = 3364 Nm/deg
-```
 
-which exceeds the original design target by approximately **41%**.
+Compared with the design target:
 
-Using the measured normalized stiffness,
-
-```
-K_vehicle
+```text
+Percent above target
 =
-1 /
+(3364 - 2383) / 2383 × 100
+=
+41.2%
+```
+
+The measured monocoque therefore exceeded the torsional-stiffness target by approximately **41%**.
+
+Using the measured normalized monocoque and suspension stiffnesses:
+
+```text
+K_vehicle,actual
+=
+1
+/
 (
 1
 +
@@ -369,18 +302,7 @@ K_vehicle
 0.917
 ```
 
-This corresponds to
-
-> **91.7% of total vehicle torsional compliance coming from the suspension**, exceeding the original 90% design objective while providing a sufficiently rigid platform for predictable suspension tuning.
-
-
-<!-- Comparison of Target and Tested-->
-<figure class="inline-image-l">
-  <img src="{{ '/assets/images/targetstiffness.png' | relative_url }}" alt="Torsional stiffness target calculation">
-  <figcaption>Figure Comparing the Targeted and Tested Torsional Stiffness Value</figcaption>
-</figure>
-
-
+This corresponds to a normalized vehicle stiffness of **91.7%**, exceeding the original 90% design objective and providing a sufficiently rigid platform for predictable suspension tuning.
 ## Final Results
 
 The ARG26 monocoque met many primary engineering goals:
