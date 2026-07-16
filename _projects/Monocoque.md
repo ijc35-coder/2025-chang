@@ -173,13 +173,13 @@ The hub-to-hub result includes compliance from both the monocoque and the suspen
 The monocoque and suspension act as torsional springs in series. Therefore, the measured hub-to-hub stiffness is related to the individual component stiffnesses by:
 
 ```text
-1 / K_hub = 1 / K_monocoque + 1 / K_suspension
+1 / K_hub = (1 / K_monocoque) + (1 / K_suspension)
 ```
 
 Using the measured values:
 
 ```text
-1 / 1907 = 1 / 3364 + 1 / K_suspension
+1 / 1907 = (1 / 3364) + (1 / K_suspension)
 ```
 
 Solving for the effective suspension stiffness gives:
@@ -220,29 +220,13 @@ This approach ensured that chassis deformation would have a relatively small eff
 The normalized vehicle-stiffness model included the wheel-rate normalization term, suspension compliance, and monocoque compliance:
 
 ```text
-1 / K_vehicle
-=
-1
-+
-1 / K'_suspension
-+
-1 / K'_monocoque
+1 / K_vehicle = 1 + (1 / K'_suspension) + (1 / K'_monocoque)
 ```
 
 For the target condition, the monocoque and suspension-supporting structures were limited to 10% of the total compliance:
 
 ```text
-0.10
-=
-1
-/
-(
-1
-+
-1 / 25.61
-+
-1 / K'_monocoque,target
-)
+0.10 = 1/(1 + (1 / 25.61) + (1 / K'_monocoque,target))
 ```
 
 Solving for the required normalized monocoque stiffness gives:
@@ -254,11 +238,8 @@ K'_monocoque,target = 13.86
 Converting the normalized target back into physical units:
 
 ```text
-K_monocoque,target
-=
-13.86 × 171.92
-=
-2383 N·m/deg
+K_monocoque,target = 13.86 × 171.92
+= 2383 N·m/deg
 ```
 
 > **Target Monocoque Torsional Stiffness: 2383 N·m/deg**
@@ -276,11 +257,7 @@ K_monocoque,measured = 3364 N·m/deg
 Compared with the design target:
 
 ```text
-Percent above target
-=
-(3364 - 2383) / 2383 × 100
-=
-41.2%
+Percent above target = (3364 - 2383) / 2383 × 100 = 41.2%
 ```
 
 The measured monocoque therefore exceeded the torsional-stiffness target by approximately **41%**.
@@ -288,19 +265,7 @@ The measured monocoque therefore exceeded the torsional-stiffness target by appr
 Using the measured normalized monocoque and suspension stiffnesses:
 
 ```text
-K_vehicle,actual
-=
-1
-/
-(
-1
-+
-1 / 25.61
-+
-1 / 19.57
-)
-=
-0.917
+K_vehicle,actual = 1 / (1+ (1/25.61) + (1/19.57)) = 0.917
 ```
 
 This corresponds to a normalized vehicle stiffness of **91.7%**, exceeding the original 90% design objective and providing a sufficiently rigid platform for predictable suspension tuning.
