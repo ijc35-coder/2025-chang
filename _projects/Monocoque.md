@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Monocoque Design and Manufacturing
+title: Monocoque Design, Manufacturing, and Analysis
 description: Design, Manufacturing Process, and Integration of Monocoque
 technologies: [Autodesk Inventor, Vault, MATLAB, ANSYS, Composite Manufacturing]
 image: /assets/images/clearcoat.jpeg
