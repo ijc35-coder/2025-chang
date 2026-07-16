@@ -223,60 +223,120 @@ This ensured that chassis deformation would have a relatively small influence on
 
 Using the normalized stiffness values, overall vehicle stiffness is
 
-```
-1 / K_vehicle
-=
-1
-+
-1 / K_suspension'
-+
-1 / K_monocoque'
-```
 
-where the leading **1** represents tire compliance and the primed values are the normalized stiffness values.
 
-The design target was
+<div class="engineering-calc">
 
-```
-K_vehicle = 0.90
-```
+  <div class="engineering-calc-title">Measured Torsional Stiffness</div>
 
-representing a vehicle whose torsional compliance is 90% controlled by the suspension.
+  <table class="measured-values">
+    <tr>
+      <td>Hub-to-hub stiffness, K<sub>hub</sub></td>
+      <td>1907 N·m/deg</td>
+    </tr>
+    <tr>
+      <td>Monocoque stiffness, K<sub>monocoque</sub></td>
+      <td>3364 N·m/deg</td>
+    </tr>
+  </table>
 
-Substituting the normalized suspension stiffness,
+  <div class="equation-label">Series stiffness relationship</div>
 
-```
-0.10
-=
-1 /
-(
-1
-+
-1 / 25.61
-+
-1 / K_monocoque,target'
-)
-```
+  <div class="equation">
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">K<sub>hub</sub></span>
+    </span>
 
-Solving gives
+    =
 
-```
-Normalized monocoque target
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">K<sub>monocoque</sub></span>
+    </span>
 
-K_monocoque,target' = 13.86
-```
+    +
 
-Converting back to physical units,
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">K<sub>suspension</sub></span>
+    </span>
+  </div>
 
-```
-K_monocoque,target
-=
-13.86 × 171.92
-=
-2383 Nm/deg
-```
+  <div class="equation-label">Substituting measured values</div>
 
-Therefore, the minimum design goal for the monocoque was
+  <div class="equation">
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">1907</span>
+    </span>
+
+    =
+
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">3364</span>
+    </span>
+
+    +
+
+    <span class="fraction">
+      <span class="numerator">1</span>
+      <span class="denominator">K<sub>suspension</sub></span>
+    </span>
+  </div>
+
+  <div class="calculation-result">
+    K<sub>suspension</sub> =
+    <strong>4403 N·m/deg</strong>
+  </div>
+
+</div>
+
+## Normalizing the Stiffness Values
+
+Vehicle torsional-stiffness requirements depend on suspension wheel rate. To compare the monocoque and suspension stiffnesses on a common basis, both values were divided by a normalization factor derived from the vehicle wheel rate.
+
+<div class="engineering-calc">
+
+  <div class="engineering-calc-title">Wheel-Rate Normalization</div>
+
+  <table class="measured-values">
+    <tr>
+      <td>Normalization factor</td>
+      <td>171.92 N·m/deg</td>
+    </tr>
+  </table>
+
+  <div class="normalized-values">
+
+    <div class="normalized-value">
+      <h4>Monocoque</h4>
+
+      <p>
+        3364 N·m/deg ÷ 171.92 N·m/deg
+      </p>
+
+      <p class="value">
+        K′<sub>monocoque</sub> = 19.57
+      </p>
+    </div>
+
+    <div class="normalized-value">
+      <h4>Suspension</h4>
+
+      <p>
+        4403 N·m/deg ÷ 171.92 N·m/deg
+      </p>
+
+      <p class="value">
+        K′<sub>suspension</sub> = 25.61
+      </p>
+    </div>
+
+  </div>
+
+</div>
 
 > **Target Monocoque Torsional Stiffness = 2383 Nm/deg**
 
