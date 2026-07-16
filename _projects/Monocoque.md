@@ -163,6 +163,7 @@ From the slopes of the measured data, the torsional stiffnesses of the monocoque
 | Monocoque | **3364 N·m/deg** |
 | Hub-to-hub assembly | **1907 N·m/deg** |
 
+
 The hub-to-hub result includes compliance from both the monocoque and the suspension structures.
 
 ---
