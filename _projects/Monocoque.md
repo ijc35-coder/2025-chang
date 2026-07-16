@@ -267,6 +267,11 @@ Using the measured normalized monocoque and suspension stiffnesses:
 ```text
 K_vehicle,actual = 1 / (1+ (1/25.61) + (1/19.57)) = 0.917
 ```
+<!-- Target vs Calculated-->
+<figure class="inline-image-l">
+  <img src="{{ '/assets/images/targetstiffness.png' | relative_url }}" alt="figureoftargetvscalculated">
+  <figcaption>Comparing 2025 Car Weights to 2026 Car Weights</figcaption>
+</figure>
 
 This corresponds to a normalized vehicle stiffness of **91.7%**, exceeding the original 90% design objective and providing a sufficiently rigid platform for predictable suspension tuning.
 ## Final Results
