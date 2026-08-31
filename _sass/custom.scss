@@ -1,3 +1,4 @@
+
 // Default to light theme
 $primary-color: #3a3f58;
 $background-color: #f7f8fa;
@@ -19,7 +20,17 @@ $text-color: #333;
 }
 
 
-.navbar, h1, h2, h3, h4, h5, h6 {
+// ==========================================
+// Typography
+// ==========================================
+
+.navbar,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
 }
@@ -29,7 +40,7 @@ h1 {
 }
 
 body {
-  font-family: "Open Sans", 'Montserrat', 'Helvetica Neue' sans-serif;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   background-color: $background-color;
   color: $text-color;
@@ -37,7 +48,13 @@ body {
   padding: 0;
 }
 
-header, footer {
+
+// ==========================================
+// Header and Footer
+// ==========================================
+
+header,
+footer {
   padding: 10px 5px;
   background: $primary-color;
   color: $background-color;
@@ -53,9 +70,19 @@ footer {
   font-size: 0.9em;
 }
 
+
+// ==========================================
+// Main Container
+// ==========================================
+
 .container {
   max-width: 600px;
 }
+
+
+// ==========================================
+// Project Items
+// ==========================================
 
 .project-item img {
   max-width: 100%;
@@ -68,6 +95,11 @@ footer {
   font-size: 1.25em;
 }
 
+
+// ==========================================
+// Buttons
+// ==========================================
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -76,6 +108,11 @@ footer {
   border-radius: 5px;
   transition: background 0.3s;
 }
+
+
+// ==========================================
+// Code Highlighting
+// ==========================================
 
 .highlight {
   background-color: #2d2d2d;
@@ -86,13 +123,38 @@ footer {
   overflow-x: auto;
 }
 
-.highlight .k { color: #c792ea; }
-.highlight .nb { color: #82aaff; }
-.highlight .s { color: #c3e88d; }
-.highlight .mi { color: #f78c6c; }
-.highlight .c { color: #5c6370; }
-.highlight .p { color: #89ddff; }
-.highlight .o { color: #ff5370; }
+.highlight .k {
+  color: #c792ea;
+}
+
+.highlight .nb {
+  color: #82aaff;
+}
+
+.highlight .s {
+  color: #c3e88d;
+}
+
+.highlight .mi {
+  color: #f78c6c;
+}
+
+.highlight .c {
+  color: #5c6370;
+}
+
+.highlight .p {
+  color: #89ddff;
+}
+
+.highlight .o {
+  color: #ff5370;
+}
+
+
+// ==========================================
+// Profile and Project Images
+// ==========================================
 
 .profile-image {
   float: left;
@@ -108,9 +170,20 @@ footer {
   vertical-align: top;
 }
 
+.profile-image,
+.project-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+// ==========================================
+// Inline Images
+// ==========================================
+
 .inline-image {
   max-width: 350px;
-  margin: 0px 25px 15px 25px;
+  margin: 0 25px 15px 25px;
   vertical-align: top;
 
   &-l {
@@ -126,91 +199,139 @@ footer {
   }
 }
 
-.profile-image, .project-image {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
+// ==========================================
+// Project Gallery
+// ==========================================
 
 .gallery-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+
+  // Keeps project cards a reasonable width
+  // while automatically adapting to screen size
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  column-gap: 30px;
+  row-gap: 40px;
+
+  width: 100%;
+  max-width: 900px;
+
   padding: 20px;
   margin: 0 auto;
-  max-width: 100%;
+
+  box-sizing: border-box;
 }
 
+
+// Individual project card
 .gallery-item {
-  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+
+  justify-self: center;
+
   text-align: center;
+
   transition: transform 0.3s ease;
-  max-width: 250px; 
-  max-height: 300px; 
+
+  // Important:
+  // do not use max-height or overflow:hidden here.
+  // That was clipping long project titles.
 }
 
+
+// Project thumbnail
 .gallery-item img {
-  width: 100%;
-  height: 85%;
   display: block;
+
+  width: 100%;
+
+  // Gives every project image identical dimensions
+  aspect-ratio: 1 / 1;
+
   object-fit: cover;
   object-position: center;
+
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+// Project title
 .gallery-item p {
-  margin: 13px 0;
-  font-size: .9rem;
+  margin: 13px 0 0;
+
+  font-size: 0.9rem;
+  line-height: 1.4;
+
   color: $text-color;
+
+  // Allows long project titles to wrap naturally
+  overflow-wrap: break-word;
 }
 
+
+// Remove link styling from gallery cards
 .gallery-item a {
+  display: block;
+  width: 100%;
+
+  color: inherit;
   text-decoration: none;
 }
 
+
+// Hover animation
 .gallery-item:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
-.project-image {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
+// ==========================================
+// Back Arrow
+// ==========================================
 
 .back-arrow {
   display: inline-block;
+
   font-size: 1.1em;
-  color: #686d85; 
-  text-decoration: none;
-  margin-bottom: 1em;
   font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
+
+  color: #686d85;
+
+  text-decoration: none;
+
+  margin-bottom: 1em;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .back-arrow:hover {
-  color: #3a3f58; 
+  color: #3a3f58;
   transform: translateX(-4px);
 }
 
 
-
-/* ==========================================
-   Engineering Calculation Formatting
-   ========================================== */
+// ==========================================
+// Engineering Calculation Formatting
+// ==========================================
 
 .engineering-calc {
   margin: 2rem 0;
   padding: 1.5rem 1.75rem;
 
   background-color: rgba($primary-color, 0.035);
+
   border: 1px solid rgba($primary-color, 0.2);
   border-radius: 8px;
 }
@@ -226,17 +347,25 @@ footer {
   font-weight: 700;
 }
 
+
+// ==========================================
+// Measured Values Table
+// ==========================================
+
 .measured-values {
   width: 100%;
   max-width: 520px;
+
   margin: 1.25rem auto;
 
   border-collapse: collapse;
+
   font-size: 1rem;
 }
 
 .measured-values td {
   padding: 0.45rem 0.75rem;
+
   border-bottom: 1px solid rgba($text-color, 0.12);
 }
 
@@ -246,18 +375,27 @@ footer {
 
 .measured-values td:last-child {
   text-align: right;
+
   white-space: nowrap;
+
   font-family: "Courier New", monospace;
 }
+
+
+// ==========================================
+// Equations
+// ==========================================
 
 .equation {
   margin: 1.75rem auto;
   padding: 0.75rem 0;
 
   text-align: center;
+
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   line-height: 2;
+
   overflow-x: auto;
 }
 
@@ -265,26 +403,40 @@ footer {
   margin: 1.5rem 0 0.25rem;
 
   color: rgba($text-color, 0.75);
+
   font-size: 0.95rem;
   font-weight: 600;
+
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
+
+// ==========================================
+// Fractions
+// ==========================================
+
 .fraction {
   display: inline-flex;
+
   flex-direction: column;
+
   align-items: center;
+
   vertical-align: middle;
 
   min-width: 4.5rem;
+
   margin: 0 0.25rem;
+
   line-height: 1.15;
 }
 
 .fraction .numerator {
   width: 100%;
+
   padding: 0 0.3rem 0.15rem;
+
   border-bottom: 1.5px solid currentColor;
 }
 
@@ -292,16 +444,25 @@ footer {
   padding: 0.15rem 0.3rem 0;
 }
 
+
+// ==========================================
+// Calculation Result
+// ==========================================
+
 .calculation-result {
   max-width: 520px;
+
   margin: 1.75rem auto 0;
+
   padding: 1rem 1.25rem;
 
   border-top: 2px solid $primary-color;
   border-bottom: 2px solid $primary-color;
 
   text-align: center;
+
   font-family: Georgia, "Times New Roman", serif;
+
   font-size: 1.25rem;
 }
 
@@ -309,28 +470,44 @@ footer {
   font-size: 1.35rem;
 }
 
+
+// ==========================================
+// Normalized Values
+// ==========================================
+
 .normalized-values {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
 
   max-width: 650px;
+
   margin: 1.5rem auto;
-  border-top: 1px solid rgba($text-color, 0.2);
-  border-bottom: 1px solid rgba($text-color, 0.2);
+
+  border-top:
+    1px solid rgba($text-color, 0.2);
+
+  border-bottom:
+    1px solid rgba($text-color, 0.2);
 }
 
 .normalized-value {
   padding: 1.25rem;
+
   text-align: center;
 }
 
 .normalized-value + .normalized-value {
-  border-left: 1px solid rgba($text-color, 0.2);
+  border-left:
+    1px solid rgba($text-color, 0.2);
 }
 
 .normalized-value h4 {
   margin: 0 0 0.6rem;
+
   font-family: "Open Sans", sans-serif;
+
   font-size: 1rem;
 }
 
@@ -340,12 +517,55 @@ footer {
 
 .normalized-value .value {
   margin-top: 0.5rem;
-  font-family: Georgia, "Times New Roman", serif;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-size: 1.2rem;
   font-weight: 700;
 }
 
+
+// ==========================================
+// Responsive Layout
+// ==========================================
+
+@media (max-width: 800px) {
+
+  .project-gallery {
+    grid-template-columns:
+      repeat(2, minmax(180px, 1fr));
+
+    column-gap: 20px;
+    row-gap: 35px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+
+    padding: 15px;
+  }
+
+  .gallery-item {
+    max-width: 300px;
+  }
+
+}
+
+
+// ==========================================
+// Engineering Calculation Mobile Layout
+// ==========================================
+
 @media (max-width: 650px) {
+
   .engineering-calc {
     padding: 1.2rem 1rem;
   }
@@ -361,6 +581,9 @@ footer {
 
   .normalized-value + .normalized-value {
     border-left: none;
-    border-top: 1px solid rgba($text-color, 0.2);
+
+    border-top:
+      1px solid rgba($text-color, 0.2);
   }
+
 }
