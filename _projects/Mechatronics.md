@@ -5,7 +5,7 @@ description: Circuit Diagrams and Debugging, Arduinos, Mechanical and Electrical
 technologies: [C using registers, circuit building]
 image: /assets/images/robot.png
 ---
-This project involved creating an autonomous cobe collection robot. 
+This project involved creating an autonomous cube collection robot. 
 
 Designed and built a fully autonomous mobile robot for a head-to-head robotics competition. The objective was to autonomously navigate an arena, detect field boundaries, locate and collect 1x1in blocks, and maximize scoring within a one-minute match while operating entirely without human intervention. The project required integrating mechanical design, embedded C programming, sensors, motor control, and autonomous decision-making within strict constraints on size, power, and cost. The robot was developed through an iterative engineering process involving concept generation, prototyping, fabrication, testing, and performance optimization.
 
