@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/IsabelCV.pdf" | relative_url }}) in PDF format.
+[Download my CV]({{ "/assets/IsabelChangCV.pdf" | relative_url }}) in PDF format.
 
 
 **Email:** [ijc35@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +443 745 8717
@@ -19,7 +19,7 @@ Aspiring engineering student with a strong foundation in hands-on manufacturing,
 
 #### Education
 - **Cornell University**  
-  *Bachelor of Science in Mechanical and Aerospace Engineering*  
+  *Bachelor of Science in Mechanical Engineering*  
   Graduation: May, 2027
 
 - **River Hill High School**  
@@ -29,7 +29,7 @@ Aspiring engineering student with a strong foundation in hands-on manufacturing,
 ---
 
 #### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS, CAM
+- **Software:** Autodesk Fusion 360, SolidWorks,Inventor, ANSYS, CAM
 - **Programming:** Python, MATLAB  
 - **Tools:** 3D Printing, Laser Cutting, Manual Machining with Lathes and Mills, Composite Layups, Hand-Held Manufacturing Tools  
 
