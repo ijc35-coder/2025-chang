@@ -26,4 +26,4 @@ Starting from an initial frame geometry, I developed shell-based finite element 
 
 The final phase of the project focused on parametric optimization. By varying the thickness of the horizontal battery-support tube while constraining the minimum safety factor, I minimized the bike's structural mass without compromising strength. Through this project, I gained experience with finite element modeling, verification through mesh convergence, design iteration, and optimization workflows commonly used in the automotive and aerospace industries.
 
-Download the full project ({{ "/assets/BikeFrameANSYS.pdf" | relative_url }}) in PDF format.
+[Download the full project] ({{ "/assets/BikeFrameANSYS.pdf" | relative_url }}) in PDF format.
