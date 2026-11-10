@@ -14,7 +14,7 @@ The monocoque is an intensive part that requires knowing the mounting locations,
 
 ## Monocoque Design-to-Manufacturing Process
 
-The design and manufacturing of the carbon-fiber monocoque followed a multi-stage workflow requiring close coordination between the torsionally stiff design, manufacturing constraints, and full multi-system level integration. As the sole monocoque designer, I owned the process from CAD through final layup and cure. Each step required careful time management and planning to ensure the monocoque completion date gave the team enough time to fully integrate each system with the monocoque and have three full months of drive days to test vehicle performance before competition in June.
+The design and manufacturing of the carbon-fiber monocoque followed a multi-stage workflow requiring close coordination between the torsionally stiff design, manufacturing constraints, and full multi-system level integration. As the sole monocoque designer, I owned the process from CAD through final layup and cure. Each step required careful time management and planning to ensure the monocoque completion date gave the team enough time to fully integrate each system with the monocoque and have four full months of drive days to test vehicle performance before competition in June.
 
 ### 1. CAD Design
 Designed the new year's monocoque geometry, incorporating packaging constraints and flat mounting interfaces for all vehicle subsystems while eliminating unnecessary features to shave off as much weight as possible from the previous design.
@@ -82,7 +82,7 @@ Manufactured the top and bottom monocoque molds through two wet layup processes.
 ### 6. Monocoque Manufacturing
 Over a ten-day intensive manufacturing period, successfully completed carbon-fiber and aluminum honeycomb layups and vacuum bagging operations using the completed molds. This resulted in a torsionally stiff, reliable monocoque ready for vehicle integration and testing.
 
-The accelerated schedule allowed for early vehicle integration. Completing the monocoque quickly supported a February 2nd drive-date target. This provided approximately five months for integration, reliability testing, tuning, and driver development before competition.
+The accelerated schedule allowed for early vehicle integration. Completing the monocoque quickly supported a February 2nd drive-date target. This provided approximately four months for integration, reliability testing, tuning, and driver development before competition.
 
 Manufacturing included:
 
