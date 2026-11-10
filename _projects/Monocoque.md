@@ -226,7 +226,7 @@ The normalized vehicle-stiffness model included the wheel-rate normalization ter
 For the target condition, the monocoque and suspension-supporting structures were limited to 10% of the total compliance:
 
 ```text
-0.10 = 1/(1 + (1 / 25.61) + (1 / K'_monocoque,target))
+0.90 = 1/(1 + (1 / 25.61) + (1 / K'_monocoque,target))
 ```
 
 Solving for the required normalized monocoque stiffness gives:
